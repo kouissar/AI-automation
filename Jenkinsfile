@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('e2e-tests') {
          steps {
-            sh 'apt install python3 -y'
+            sh 'sudo apt install python3 -y'
             // sh 'source venv/bin/activate'
             sh 'pip install -r requirements.txt'
             sh 'pytest'
