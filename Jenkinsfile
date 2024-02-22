@@ -16,7 +16,7 @@ pipeline {
     agent {
       docker {
         image 'python:slim'
-        label 'my-build-agent'
+        label 'Built-In'
       }
     }
     stages {
